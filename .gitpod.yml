@@ -1,7 +1,15 @@
 tasks:
   - name: Install
     init: bash "$(git rev-parse --show-toplevel)"/download.sh
-    command: bash "$(git rev-parse --show-toplevel)"/install.sh
+    command: |
+      bash "$(git rev-parse --show-toplevel)"/install.sh
+      gp sync-done install
+  - name: Serve Instant
+    command: |
+      echo -e "\e[31mWaiting for install to finish before serving...\e[0m"
+      gp sync-await install
+      echo -e "\e[32mServing Instant on port 22500...\e[0m"
+      nvim --headless -c "InstantStartServer localhost 22500"
 
 github:
   prebuilds:
