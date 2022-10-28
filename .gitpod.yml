@@ -6,7 +6,7 @@ tasks:
       gp sync-done install
   - name: Serve Instant
     command: |
-      gp sync-wait install
+      gp sync-await install
       echo -e "Serving Instant on port 22500..."
       nvim --headless -c "InstantServe localhost 22500"
 
