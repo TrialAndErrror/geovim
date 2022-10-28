@@ -37,13 +37,6 @@ utils.augroup("mini", {
   },
 })
 
-utils.augroup("Golang", {
-  {
-    event = { "BufWritePre" },
-    pattern = { "*.go" },
-    command = 'silent! lua require("go.format").goimport()',
-  },
-})
 
 utils.augroup("__env", {
   {

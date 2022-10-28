@@ -12,6 +12,6 @@ return {
     show_close_icon = false,
   },
   highlights = {
-    duplicate = { guibg = "#2C323C" },
+    duplicate = { bg = "#2C323C" },
   },
 }

@@ -9,7 +9,6 @@ if status_ok then
       -- Completion
       -- builtins.completion.spell,
       -- Formatting
-      builtins.formatting.stylua, -- Lua
       builtins.formatting.shfmt, -- Shell
       builtins.formatting.prettierd.with {
         filetypes = {

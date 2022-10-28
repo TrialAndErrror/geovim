@@ -1,8 +1,8 @@
 return {
-  close_if_last_window = true,
+  close_if_last_window = false,
   enable_diagnostics = true,
   window = {
-    position = "right",
+    position = "left",
     width = 35,
   },
   event_handlers = {
