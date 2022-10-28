@@ -113,23 +113,11 @@ local astro_plugins = {
   },
 
   -- Completion engine
-  -- ["hrsh7th/nvim-cmp"] = {
-  --  event = "InsertEnter",
-  --  config = function() require "configs.cmp" end,
-  --},
-
-  -- Coq completion
-  ["ms-jpq/coq_nvim"] = {
-    branch = "coq",
+  ["hrsh7th/nvim-cmp"] = {
+   event = "InsertEnter",
+   config = function() require "configs.cmp" end,
   },
 
-  ["ms-jpq/coq.artifacts"] = {
-    branch = "artifacts",
-  },
-
-  ["ms-jpq/coq.thirdparty"] = {
-    branch = "3p",
-  },
   ["saadparwaiz1/cmp_luasnip"] = {
     after = "nvim-cmp",
     config = function() astronvim.add_user_cmp_source "luasnip" end,
