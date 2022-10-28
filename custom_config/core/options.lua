@@ -37,7 +37,7 @@ astronvim.vim_opts(astronvim.user_plugin_opts("options", {
     writebackup = false, -- Disable making a backup before overwriting a file
   },
   g = {
-    instant_username = "wade",
+    instant_username = "geovide-server",
     highlighturl_enabled = true, -- highlight URLs by default
     mapleader = " ", -- set leader key
     zipPlugin = false, -- disable zip
