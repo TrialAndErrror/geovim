@@ -1,0 +1,10 @@
+tasks:
+  - name: Install
+    init: bash "$(git rev-parse --show-toplevel)"/download.sh
+    command: bash "$(git rev-parse --show-toplevel)"/install.sh
+
+github:
+  prebuilds:
+    branches: true
+    master: true
+    pullRequests: true
