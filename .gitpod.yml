@@ -9,7 +9,7 @@ tasks:
       echo -e "\e[31mWaiting for install to finish before serving...\e[0m"
       gp sync-await install
       echo -e "\e[32mServing Instant on port 22500...\e[0m"
-      nvim --headless -c "InstantServe localhost 22500"
+      nvim --headless -c "InstantStartServer localhost 22500"
 
 github:
   prebuilds:

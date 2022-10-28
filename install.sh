@@ -17,7 +17,6 @@ mkdir ~/.config/nvim && mv $root/installers/astro/* ~/.config/nvim
 
 echo -e "\n\n${GREEN}Setting up Packer...${END}"
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
 
 echo -e "\n\n${GREEN}Installing language servers: Python, Typescript, ShellCheck, and Tailwind${END}"
 nvim --headless -c 'MasonInstall typescript-language-server python-lsp-server tailwindcss-language-server shellcheck' -c q
