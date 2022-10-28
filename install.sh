@@ -19,7 +19,7 @@ echo -e "\n\n${GREEN}Setting up Packer...${END}"
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 echo -e "\n\n${GREEN}Installing language servers: Python, Typescript, ShellCheck, and Tailwind${END}"
-nvim --headless -c 'MasonInstall typescript-language-server python-lsp-server tailwindcss-language-server shellcheck' -c q
+nvim --headless -c 'MasonInstall typescript-language-server python-lsp-server tailwindcss-language-server shellcheck rust-analyzer' -c q
 echo -e "\n\n${GREEN}Installing Formatters: Black and Prettier${END}"
 
 nvim --headless -c 'MasonInstall black prettier' -c q
@@ -32,7 +32,7 @@ sudo mv -rf $root/custom_config/core/* ~/.config/nvim/lua/core
 sudo mv -rf $root/custom_config/user/* ~/.config/nvim/lua/
 
 echo -e "\n\n${GREEN}Installing Instant...${END}"
-nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerInstall'
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 echo -e "\n\n${GREEN}Cleaning Up...${END}"
 rm -rf $root/custom_config
