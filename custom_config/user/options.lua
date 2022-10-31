@@ -7,7 +7,7 @@ return {
     foldmethod = "expr",
     linebreak = true, -- linebreak soft wrap at words
     list = true, -- show whitespace characters
-    listchars = { tab = "│→", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣", eol = "↲" },
+    listchars = { tab = "│→", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣", eol = " " },
     shortmess = vim.opt.shortmess + { I = true },
     showbreak = "↪ ",
     spellfile = "~/.config/nvim/lua/user/spell/en.utf-8.add",

@@ -25,13 +25,9 @@ if status_ok then
         },
       },
       -- Linters
-      builtins.diagnostics.rubocop, -- Ruby
       builtins.diagnostics.tsc, -- Typescript
       builtins.diagnostics.shellcheck.with {
         diagnostics_format = "#{m} [#{c}]",
-      },
-      builtins.diagnostics.luacheck.with {
-        extra_args = { "--global vim" },
       },
       -- Code Actions
       builtins.code_actions.gitsigns,
