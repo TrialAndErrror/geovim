@@ -42,7 +42,7 @@ if status_ok then
     },
     on_attach = function(client)
       -- Format on save
-      if client.resolved_capabilities.document_formatting then
+      if client.server_capabilities.document_formatting then
         vim.api.nvim_create_autocmd("BufWritePre", {
           desc = "Auto format before save",
           pattern = "<buffer>",
