@@ -28,8 +28,8 @@ rm $root/installers/nvim.appimage
 rm -rf $root/installers
 
 echo -e "\n\n${GREEN}Writing Config Files...${END}"
-sudo mv -rf $root/custom_config/core/* ~/.config/nvim/lua/core
-sudo mv -rf $root/custom_config/user/* ~/.config/nvim/lua/
+cp -r $root/custom_config/core ~/.config/nvim/lua/
+cp -r $root/custom_config/user ~/.config/nvim/lua/
 
 echo -e "\n\n${GREEN}Installing Instant...${END}"
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
