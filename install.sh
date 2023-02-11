@@ -13,7 +13,7 @@ sudo mv $root/installers/squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 
 echo -e "\n\n${GREEN}Setting up Astro Latest...${END}"
-mkdir ~/.config/nvim && mv $root/installers/astro/* ~/.config/nvim
+mkdir -p ~/.config/nvim && mv $root/installers/astro/* ~/.config/nvim
 
 echo -e "\n\n${GREEN}Setting up Packer...${END}"
 nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
